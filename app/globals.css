@@ -3,3 +3,6 @@
 
 /* Functional timeline additions */
 .timeline-video-lane{overflow-x:auto;overflow-y:hidden}.timeline-video-lane .timeline-clips{width:max-content;min-width:100%;overflow:visible}.timeline-clip{cursor:grab}.timeline-clip:active{cursor:grabbing}.timeline-playhead{position:absolute;z-index:5;top:0;bottom:0;width:2px;background:#c8f47a;box-shadow:0 0 0 1px #c8f47a22,0 0 8px #c8f47a99;pointer-events:none}.timeline-playhead:before{content:"";position:absolute;top:0;left:-4px;width:10px;height:10px;background:#c8f47a;clip-path:polygon(0 0,100% 0,50% 100%)}
+
+/* Timeline playhead: visible vertical ruler line like a desktop video editor */
+.timeline{position:relative}.timeline-video-lane{position:relative}.timeline-video-lane .timeline-playhead{position:absolute;z-index:20;top:-58px;bottom:-180px;width:2px;background:#19baff;box-shadow:0 0 7px #19baff88;pointer-events:none}.timeline-video-lane .timeline-playhead:before{content:"";position:absolute;top:0;left:-7px;width:16px;height:16px;border-radius:50%;background:#19baff;clip-path:none}.timeline-video-lane .timeline-playhead:after{content:"";position:absolute;top:16px;bottom:0;left:0;width:2px;background:#19baff}
