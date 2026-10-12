@@ -6,3 +6,6 @@
 
 /* Timeline playhead: visible vertical ruler line like a desktop video editor */
 .timeline{position:relative}.timeline-video-lane{position:relative}.timeline-video-lane .timeline-playhead{position:absolute;z-index:20;top:-58px;bottom:-180px;width:2px;background:#19baff;box-shadow:0 0 7px #19baff88;pointer-events:none}.timeline-video-lane .timeline-playhead:before{content:"";position:absolute;top:0;left:-7px;width:16px;height:16px;border-radius:50%;background:#19baff;clip-path:none}.timeline-video-lane .timeline-playhead:after{content:"";position:absolute;top:16px;bottom:0;left:0;width:2px;background:#19baff}
+
+/* Timeline workspace scaling and editing affordances */
+.ruler{overflow:hidden}.ruler-scale{position:relative;min-width:100%;height:100%;flex:0 0 auto}.ruler-scale span{transform:translateX(-50%);white-space:nowrap}.timeline-video-lane{overflow-x:auto;overflow-y:hidden;cursor:crosshair;position:relative;scrollbar-width:thin}.timeline-video-lane .timeline-clips{position:relative;display:flex;align-items:stretch;gap:3px;width:max-content;min-width:100%;overflow:visible}.timeline-clip{flex:0 0 auto;min-width:70px;user-select:none}.timeline-playhead{z-index:30;pointer-events:none}.timeline-playhead:after{background:#19baff}.track-row{overflow-x:auto}.track-lane{flex:0 0 auto}
