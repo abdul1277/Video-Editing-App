@@ -12,3 +12,6 @@
 
 /* Keyboard shortcut legend */
 .keyboard-shortcuts{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:9px 16px;border-top:1px solid var(--border,#292733);background:#111017;color:#9b98a9;font-size:11px}.keyboard-shortcuts span{display:inline-flex;align-items:center;gap:4px}.keyboard-shortcuts kbd{padding:2px 5px;border:1px solid #393545;border-bottom-width:2px;border-radius:4px;background:#1c1a24;color:#eeebf7;font:inherit;font-size:10px}
+
+/* Playhead grab target and selected-clip quick actions */
+.timeline-video-lane .timeline-playhead{cursor:ew-resize;pointer-events:auto;touch-action:none}.timeline-video-lane .timeline-playhead:before{left:-8px;width:18px;height:18px;cursor:ew-resize}.timeline-video-lane .timeline-playhead:after{left:-7px;width:16px;opacity:.01;cursor:ew-resize}.timeline-actions{flex-wrap:wrap}.clip-speed-control{display:inline-flex;align-items:center;gap:5px;color:var(--muted,#aaa);font-size:11px}.clip-speed-control select{max-width:78px;background:#1b1922;color:#eee;border:1px solid #383441;border-radius:6px;padding:6px}
