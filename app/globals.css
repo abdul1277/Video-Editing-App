@@ -9,3 +9,6 @@
 
 /* Timeline workspace scaling and editing affordances */
 .ruler{overflow:hidden}.ruler-scale{position:relative;min-width:100%;height:100%;flex:0 0 auto}.ruler-scale span{transform:translateX(-50%);white-space:nowrap}.timeline-video-lane{overflow-x:auto;overflow-y:hidden;cursor:crosshair;position:relative;scrollbar-width:thin}.timeline-video-lane .timeline-clips{position:relative;display:flex;align-items:stretch;gap:3px;width:max-content;min-width:100%;overflow:visible}.timeline-clip{flex:0 0 auto;min-width:70px;user-select:none}.timeline-playhead{z-index:30;pointer-events:none}.timeline-playhead:after{background:#19baff}.track-row{overflow-x:auto}.track-lane{flex:0 0 auto}
+
+/* Keyboard shortcut legend */
+.keyboard-shortcuts{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:9px 16px;border-top:1px solid var(--border,#292733);background:#111017;color:#9b98a9;font-size:11px}.keyboard-shortcuts span{display:inline-flex;align-items:center;gap:4px}.keyboard-shortcuts kbd{padding:2px 5px;border:1px solid #393545;border-bottom-width:2px;border-radius:4px;background:#1c1a24;color:#eeebf7;font:inherit;font-size:10px}
