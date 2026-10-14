@@ -43,3 +43,59 @@
 .timeline-video-lane .timeline-clip{cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;will-change:left;}
 .timeline-video-lane .timeline-clip:active{cursor:grabbing;}
 .timeline-video-lane .clip-trim-handle{touch-action:none;}
+
+
+/* FrameForge timeline polish — compact, precision-editor visual system */
+.timeline{height:292px;min-height:250px;padding:14px 16px 10px;background:linear-gradient(180deg,#12141b 0%,#0d0f15 100%);border-top:1px solid #343846;box-shadow:0 -12px 36px #0002;gap:0}
+.timeline-header{gap:16px;align-items:center;margin-bottom:9px;flex-shrink:0}
+.timeline-header h3{font-size:15px;letter-spacing:-.35px;margin:4px 0 0}
+.timeline-count{display:inline-flex;align-items:center;border:1px solid #343746;background:#1a1d27;border-radius:5px;padding:3px 6px;font-size:9px}
+.timeline-actions{align-items:center;gap:5px;flex-wrap:nowrap;min-width:0}
+.timeline-actions button{min-height:27px;white-space:nowrap;border-color:#303440;background:#191c25;color:#b7bdca;transition:background .15s,border-color .15s,color .15s}
+.timeline-actions button:hover{background:#252a37;border-color:#50586b;color:#fff}
+.timeline-actions button:focus-visible,.timeline-clip:focus-visible{outline:2px solid #27c8ff;outline-offset:2px}
+.timeline-zoom-control{padding:3px 5px 3px 8px;border:1px solid #303440;border-radius:6px;background:#171a22}
+.timeline-zoom-control button{min-height:22px;padding:3px 7px;background:#222632;border-color:#383e4d}
+.timeline-zoom-control input{width:78px}
+.ruler,.track-row{grid-template-columns:82px minmax(0,1fr)}
+.ruler{height:25px;flex-shrink:0;background:#11141b}
+.track-label-spacer{border-right:1px solid #292d39}
+.ruler-scale{height:25px;border-bottom:1px solid #353a48;background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(12.5% - 1px),#2c303b calc(12.5% - 1px),#2c303b 12.5%)}
+.ruler-scale span{top:5px;color:#858c9e;font-size:9px;padding:0 3px;background:#11141b}
+.track-row{min-height:49px;flex-shrink:0}
+.track-label{gap:8px;padding-left:9px;border-right:1px solid #303542;border-bottom:1px solid #292d37;background:#151820;color:#a7adbc;font-size:10px;font-weight:600}
+.track-label svg{color:#8c98ad}
+.track-lane{border-bottom:1px solid #252a35;background-color:#11141b;background-image:linear-gradient(90deg,#272c37 1px,transparent 1px);background-size:calc(5 * 12px * var(--timeline-zoom,1)) 100%;padding:5px 0}
+.timeline-video-lane{border-bottom-color:#343a48;background-color:#10131a;background-image:repeating-linear-gradient(90deg,transparent 0,transparent 59px,#222734 60px)}
+.timeline-video-lane .timeline-clips{height:39px}
+.timeline-video-lane .timeline-clip{height:37px;border-radius:6px;border:1px solid #4b5c8a;background:linear-gradient(180deg,#354c77 0%,#253653 100%);box-shadow:inset 0 1px #ffffff18,0 2px 5px #0003;transition:border-color .12s,filter .12s;isolation:isolate}
+.timeline-video-lane .timeline-clip:hover{filter:brightness(1.15);border-color:#7da9e9}
+.timeline-video-lane .timeline-clip.clip-active{border:1px solid #23c9ff;background:linear-gradient(180deg,#315d7d 0%,#213b54 100%);box-shadow:0 0 0 1px #23c9ff45,0 0 15px #19baff14,inset 0 1px #ffffff22}
+.timeline-video-lane .clip-wave{inset:2px 8px 11px;align-items:center;gap:3px;opacity:.34;pointer-events:none}
+.timeline-video-lane .clip-wave i{flex:1;max-width:4px;min-width:2px;background:#9bdfff;border-radius:2px}
+.timeline-video-lane .clip-label{left:10px;right:10px;bottom:4px;gap:5px;color:#f0f6ff;font-size:10px;font-weight:600;z-index:2}
+.timeline-video-lane .clip-label svg{flex-shrink:0;color:#a5e5ff}
+.timeline-video-lane .clip-trim-handle{width:6px;background:#d9f6ff;opacity:.72;z-index:9}
+.timeline-video-lane .clip-trim-handle:hover{width:8px;background:#fff;opacity:1;box-shadow:0 0 8px #23c9ff}
+.timeline-video-lane .timeline-playhead{z-index:30;background:#ff557f;box-shadow:0 0 9px #ff557f99}
+.timeline-video-lane .timeline-playhead:before,.timeline-video-lane .timeline-playhead:after{background:#ff557f}
+.timeline-video-lane .timeline-playhead:before{width:14px;height:13px;left:-6px;border-radius:3px 3px 6px 6px;clip-path:polygon(0 0,100% 0,100% 55%,50% 100%,0 55%)}
+.timeline-video-lane .timeline-playhead:after{top:12px;left:0;width:2px;opacity:1}
+.text-track-lane,.audio-track-lane{min-height:47px}
+.text-track-add{border:1px dashed #5b4771;border-radius:5px;background:#211a2b;color:#bba8d8;padding:7px 10px;font-size:10px}
+.text-track-add:hover{background:#2c213b;border-color:#9272b8}
+.text-clip{background:linear-gradient(90deg,#47315b,#342541);border-color:#79589a;box-shadow:inset 0 1px #ffffff12}
+.audio-timeline-clip{border-radius:6px;border-color:#537e50;background:linear-gradient(180deg,#2a4b35,#1b3328);box-shadow:inset 0 1px #ffffff12}
+.audio-timeline-clip:hover{border-color:#8cc77b}
+.audio-timeline-clip.clip-active{border-color:#c5f277;box-shadow:0 0 0 1px #c5f27735}
+.audio-drop{border-radius:5px;background:#151c17;border-color:#3c513c;color:#9fbf8d}
+.timeline-footer{min-height:24px;padding-top:7px;font:9px "DM Mono",monospace;color:#8b91a0;gap:12px;flex-shrink:0}
+.timeline-footer>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.timeline-footer>span:last-child{white-space:nowrap;color:#6f7788}
+.timeline-footer .status-dot{background:#28c8ff;box-shadow:0 0 8px #28c8ff70}
+.timeline-video-lane::-webkit-scrollbar,.timeline-actions::-webkit-scrollbar{height:6px}
+.timeline-video-lane::-webkit-scrollbar-track{background:#0c0e13}
+.timeline-video-lane::-webkit-scrollbar-thumb{background:#363d4b;border-radius:8px}
+.timeline-video-lane::-webkit-scrollbar-thumb:hover{background:#535d70}
+@media(max-width:1100px){.timeline{height:310px}.timeline-header{align-items:flex-start}.timeline-actions{overflow-x:auto;padding-bottom:3px}.timeline-actions button{flex-shrink:0}.timeline-zoom-control input{width:60px}}
+@media(max-width:680px){.timeline{height:285px;padding:10px 9px 8px}.ruler,.track-row{grid-template-columns:62px minmax(0,1fr)}.timeline-header{flex-direction:column;align-items:stretch;gap:8px}.timeline-actions{max-width:100%}.timeline-footer{font-size:8px}.timeline-count{font-size:8px}}
