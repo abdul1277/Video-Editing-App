@@ -37,3 +37,9 @@
 .timeline-video-lane .timeline-clip{position:absolute;top:0;bottom:0;height:37px;margin:0}
 .timeline-video-lane .timeline-clip[draggable="true"]{cursor:grab}
 .timeline-video-lane .timeline-clip[draggable="true"]:active{cursor:grabbing}
+
+
+/* Reliable pointer-driven clip movement (mouse, pen, and touch) */
+.timeline-video-lane .timeline-clip{cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;will-change:left;}
+.timeline-video-lane .timeline-clip:active{cursor:grabbing;}
+.timeline-video-lane .clip-trim-handle{touch-action:none;}
