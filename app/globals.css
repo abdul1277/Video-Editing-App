@@ -31,3 +31,9 @@
 .timeline-video-lane{scroll-behavior:auto}
 .timeline-video-lane .timeline-clip{touch-action:pan-x}
 .timeline-zoom-control input{cursor:ew-resize}
+
+/* Absolute timeline coordinates allow real gaps and free clip placement */
+.timeline-video-lane .timeline-clips{display:block;position:relative;min-width:100%;height:37px;overflow:visible}
+.timeline-video-lane .timeline-clip{position:absolute;top:0;bottom:0;height:37px;margin:0}
+.timeline-video-lane .timeline-clip[draggable="true"]{cursor:grab}
+.timeline-video-lane .timeline-clip[draggable="true"]:active{cursor:grabbing}
